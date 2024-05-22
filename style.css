@@ -1,0 +1,612 @@
+*,
+*:before,
+:after {
+  box-sizing: border-box;
+}
+html {
+  width: 100%;
+  height: 100%;
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  width: 100%;
+  height: 100%;
+}
+a {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+button {
+  background-color: black;
+  color: #fff;
+}
+.btn {
+  min-width: 240px;
+  height: 75px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Jost", sans-serif;
+  font-size: 24px;
+  border-radius: 21px;
+  transition: 0.2s;
+}
+
+svg {
+  fill: red;
+}
+
+.btn-main {
+  background-color: #5838e1;
+}
+
+.btn-main:hover {
+  background-color: #2e1d7b;
+}
+
+.btn-secondary {
+  text-align: center;
+  border: 1px solid #606060;
+}
+
+.btn-secondary:hover {
+  background-color: #606060;
+}
+
+.btn-info {
+  text-align: center;
+  border: 1px solid #5838e1;
+}
+
+.btn-info:hover {
+  background-color: #5838e1;
+}
+
+.btn-consultation {
+  border: 1px solid #5838e1;
+}
+
+.btn-consultation:hover {
+  background-color: #5838e1;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  background-color: black;
+  border-bottom: 1px solid #606060;
+  z-index: 999;
+}
+
+.container {
+  width: 1500px;
+  margin: 0 auto;
+}
+.nav-social {
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+}
+
+.nav_link {
+  margin-right: 90px;
+}
+
+.nav_link:last-child {
+  margin: 0;
+}
+
+.nav_nav {
+  margin-right: 60px;
+  font-size: 32px;
+  font-weight: 600px;
+  font-family: "Jost", sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s ease;
+}
+.nav_nav:hover {
+  color: #5838e1;
+}
+
+.nav_nav.active {
+  color: #5838e1;
+}
+.header_wrapper {
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+  align-items: center;
+}
+
+.header_actions {
+  display: flex;
+  justify-content: center;
+}
+
+.header-text {
+  font-size: 16px;
+  font-family: "Jost", sans-serif;
+}
+
+.logo {
+  height: 85px;
+  display: block;
+}
+
+.intro_wrapper {
+  padding: 20px 0;
+  min-height: 980px;
+  display: flex;
+  position: relative;
+  z-index: 2;
+}
+
+.intro {
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  margin-bottom: 141px;
+  padding: 0;
+}
+
+.intro::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-color: rgba(2, 2, 4, 0.55);
+}
+.intro_block {
+  min-width: 660px;
+}
+
+.intro_text {
+  font-weight: bold;
+  font-size: 58px;
+  font-family: "Playfair Display", serif;
+  margin: 0 0 35px;
+  padding-top: 164px;
+}
+.intro_p {
+  font-size: 25px;
+  font-family: "Playfair Display", serif;
+  color: #acacac;
+  margin: 0 0 35px;
+}
+.intro_actions .btn-main {
+  margin-right: 35px;
+}
+
+.intro_actions {
+  display: flex;
+}
+
+.info-block {
+  display: flex;
+  margin-bottom: 260px;
+  align-items: center;
+}
+
+.info-item {
+  margin: 40px;
+}
+
+.info-title {
+  font-size: 40px;
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.info-text {
+  font-size: 28px;
+  font-family: "Playfair Display", serif;
+  color: #acacac;
+  margin-bottom: 64px;
+}
+
+.info-img {
+  object-fit: cover;
+}
+
+.info-block-second {
+  align-items: center;
+  display: flex;
+  margin-bottom: 100px;
+}
+
+.info-item-second {
+  margin: 40px;
+}
+
+.info-title-second {
+  font-size: 40px;
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.info-text-second {
+  font-size: 28px;
+  font-family: "Playfair Display", serif;
+  color: #acacac;
+  margin-bottom: 40px;
+}
+
+.consultation {
+  display: flex;
+  margin-bottom: 100px;
+}
+
+.consultation-button {
+  margin-left: 50px;
+}
+
+.consultation-text {
+  font-size: 48px;
+  font-family: "Playfair Display", serif;
+  margin: 0;
+  padding: 0;
+}
+
+input {
+  background: transparent;
+  border: none;
+  color: #fff;
+}
+
+.name {
+  min-width: 240px;
+  height: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Jost", sans-serif;
+  font-size: 24px;
+  border-radius: 21px;
+  border: 1px solid #5838e1;
+  margin-bottom: 25px;
+}
+
+.number {
+  font-size: 15px;
+  min-width: 240px;
+  height: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Jost", sans-serif;
+  font-size: 24px;
+  border: 1px solid #5838e1;
+  border-radius: 21px;
+  margin-bottom: 25px;
+}
+
+.footer {
+  border-top: 1px solid #606060;
+}
+
+.footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+  height: 200px;
+  align-items: center;
+}
+
+.footer-text {
+  text-align: center;
+}
+
+.footer-connection {
+  font-family: "Jost", sans-serif;
+  font-size: 24px;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-number {
+  color: #5838e1;
+  font-family: "Jost", sans-serif;
+  font-size: 24px;
+  margin: 0;
+  padding: 0;
+}
+
+.title-wrapper {
+  text-align: center;
+}
+
+.title--wrapper {
+  font-family: "Jost", sans-serif;
+  font-size: 24px;
+  margin: 0;
+  padding: 0;
+}
+
+.pochta {
+  color: #5838e1;
+  font-family: "Jost", sans-serif;
+  font-size: 24px;
+  margin: 0;
+  padding: 0;
+}
+
+.catalog {
+  display: flex;
+  margin-bottom: 120px;
+}
+
+.catalog-title {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  font-family: "Jost", sans-serif;
+  text-align: center;
+}
+
+.catalog-block {
+  display: flex;
+  align-items: center;
+}
+
+.catalog-border {
+  display: flex;
+  position: relative;
+  border: solid #5838e1;
+  width: 1600px;
+  height: 600px;
+}
+
+.catalog-img {
+  padding: 50px;
+}
+
+.catalog-name {
+  padding-top: 50px;
+  font-size: 30px;
+  font-family: "Jost", sans-serif;
+  font-weight: bold;
+  padding-bottom: 40px;
+}
+
+.catalog-disc {
+  font-size: 28px;
+  font-family: "Jost", sans-serif;
+  font-weight: 300;
+  color: #acacac;
+  padding-bottom: 60px;
+}
+
+.catalog-btn {
+  min-width: 200px;
+  height: 70px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Jost", sans-serif;
+  font-size: 24px;
+  border: 2px solid #fff;
+  transition: 0.2s;
+}
+
+.catalog-btn:hover {
+  background-color: #5838e1;
+}
+
+.catalog-cost {
+  min-width: 320px;
+  height: 70px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Jost", sans-serif;
+  font-size: 24px;
+  border: 2px solid #fff;
+}
+
+.catalog-cost {
+  margin-left: 40px;
+}
+
+.catalog-name-center {
+  text-align: center;
+  padding-top: 50px;
+  font-size: 30px;
+  font-family: "Jost", sans-serif;
+  font-weight: bold;
+  padding-bottom: 40px;
+}
+
+.catalog-disc-small {
+  font-size: 20px;
+  font-family: "Jost", sans-serif;
+  font-weight: 300;
+  color: #acacac;
+  padding-bottom: 60px;
+}
+
+.catalog-disc-smaller {
+  font-size: 25px;
+  font-family: "Jost", sans-serif;
+  font-weight: 300;
+  color: #acacac;
+  padding-bottom: 140px;
+}
+
+.catalog-disc-smallerr {
+  font-size: 25px;
+  font-family: "Jost", sans-serif;
+  font-weight: 300;
+  color: #acacac;
+  padding-bottom: 100px;
+}
+
+.descrip {
+  margin-top: 100px;
+  margin-bottom: 120px;
+}
+
+.descrip-border {
+  justify-content: center;
+  display: flex;
+  position: relative;
+  border: solid #5838e1;
+}
+
+.descrip--img {
+  padding-bottom: 100px;
+  padding-top: 100px;
+}
+
+.descrip-img {
+  display: flex;
+  justify-content: center;
+}
+
+.descrip-titel {
+  font-size: 30px;
+  font-family: "Jost", sans-serif;
+  font-weight: bold;
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+.descrip-har {
+  font-size: 25px;
+  font-family: "Jost", sans-serif;
+  font-weight: 300;
+  color: #acacac;
+  padding-bottom: 50px;
+}
+
+.btn-description {
+  min-width: 200px;
+  height: 70px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Jost", sans-serif;
+  font-size: 24px;
+  border: 2px solid #fff;
+  transition: 0.2s;
+}
+
+.btn-description:hover {
+  background-color: #5838e1;
+}
+
+.descrip-cost {
+  min-width: 200px;
+  height: 70px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Jost", sans-serif;
+  font-size: 24px;
+  border: 2px solid #fff;
+  margin-right: 50px;
+}
+
+.descrip-actions {
+  padding-bottom: 100px;
+}
+
+.pokupka {
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pokupka-name {
+  min-width: 340px;
+  height: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Jost", sans-serif;
+  font-size: 24px;
+  border-radius: 21px;
+  border: 1px solid #5838e1;
+  margin-bottom: 25px;
+}
+
+.pokupka-surname {
+  min-width: 240px;
+  height: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Jost", sans-serif;
+  font-size: 24px;
+  border-radius: 21px;
+  border: 1px solid #5838e1;
+  margin-bottom: 25px;
+}
+
+.pokupka-number {
+  min-width: 240px;
+  height: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Jost", sans-serif;
+  font-size: 24px;
+  border-radius: 21px;
+  border: 1px solid #5838e1;
+  margin-bottom: 25px;
+}
+
+.btn--consultation {
+  border: 1px solid #5838e1;
+  transition: 0.2s;
+}
+
+.btn--consultation:hover {
+  background-color: #5838e1;
+}
+.pokupka-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.border {
+  padding: 100px;
+  border: solid #5838e1;
+  margin-bottom: 100px;
+}
+
+.map {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.pokupka-text {
+  text-align: center;
+  padding-top: 50px;
+  font-size: 30px;
+  font-family: "Jost", sans-serif;
+  font-weight: bold;
+  padding-bottom: 40px;
+}
+
+.sviaz {
+  text-align: center;
+
+  font-size: 30px;
+  font-family: "Jost", sans-serif;
+  font-weight: bold;
+  padding-bottom: 40px;
+}

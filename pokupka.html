@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Moto</title>
+    <link rel="stylesheet" href="new.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header_wrapper">
+          <nav class="nav-social">
+            <div class="header-text">
+              <p>Больше информации в соц сетях</p>
+            </div>
+            <div class="header_actions">
+                <a
+                href=https://www.youtube.com/@EXPLOSIVEMIKE
+                target="_blank"
+                class="nav_link"
+                ><img src="img/iconYouTube.svg" alt="youtube"
+              /></a>
+              <a
+                href="https://www.facebook.com/?locale=ru_RU"
+                target="_blank"
+                class="nav_link"
+                ><img src="img/iconFB 1.svg" alt="fb"
+              /></a>
+              <a href="https://vk.com/" target="_blank" class="nav_link"
+                ><img src="img/iconVK.svg" alt="vk"
+              /></a>
+            </div>
+          </nav>
+
+          <div class="header_block">
+            <nav>
+              <a href="index.html" class="nav_nav">Главная</a>
+              <a href="catalog.html" class="nav_nav active">Каталог</a>
+              <a id="open-model-btn" class="nav_nav">Контакты</a>
+            </nav>
+          </div>
+          <a href="#" class="logo"><img src="img/logo.png" alt="logo" /></a>
+        </div>
+      </div>
+    </header>
+
+
+
+    <div class="container">
+        <div class="pokupka">
+            <div class="pokupka-item">
+                <div class="sviaz">Мы с вами свяжемся!</div>
+                <div class="pokupka-name">
+                    <input type="text" placeholder="Ваше имя" />
+                  </div>
+                  <div class="pokupka-surname">
+                    <input type="text" placeholder="Ваша фамилия" />
+                  </div>
+                  <div class="pokupka-number">
+                    <input type="text" placeholder="+7 ( _ _ _ ) _ _ _ - _ _ - _ _" />
+                  </div>
+                  <div class="pokupka-btn">
+                      <button id="open-modal-btn" class="btn btn--consultation">
+                        Отправить заявку
+                      </button>
+                  </div>
+            </div>
+        </div>
+    </div>
+<div class="container">
+    <div class="map">
+        <div class="border">
+            <div class="pokupka-text">Карта и контакты</div>
+            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A7bc08133e25add9f04be99e05ce257f3d2455845e6835601217b603f92f8fcaf&amp;width=500&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="modal" id="my-modal">
+        <div class="modal-item">
+          <button class="modal-close-btn" id="close-modal-btn">X</button>
+          <h2>Спасибо за заявку!</h2>
+          <p class="modal-text">Наш оператор свяжется с вами в течении часа</p>
+        </div>
+      </div>
+      <script src="index.js"></script>
+      <script defer src="second.js"></script>
+      <div class="model" id="my-model">
+        <div class="model-item">
+          <button class="model-close-btn" id="close-model-btn">X</button>
+          <h2 class="model-title">Контактные данные</h2>
+          <p class="model-text">
+            <b>Почта:</b> nn2341839@gmail.com <br />
+            <b>Номер телефона:</b> 8-800-555-35-35
+          </p>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-wrapper">
+            <div class="footer-text">
+              <div class="footer-connection">
+                <p>Телефон для консультации</p>
+              </div>
+              <div class="footer-number">
+                <p>8-800-555-35-35</p>
+              </div>
+            </div>
+            <div class="footer-block">
+              <a class="footer-logo" href="#">
+                <img src="img/logo.png" alt="logo" />
+              </a>
+            </div>
+            <div class="title-wrapper">
+              <p class="title--wrapper">По всем вопросам</p>
+              <p class="pochta">nn2341839@gmail.com</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+</body>
+</html>
